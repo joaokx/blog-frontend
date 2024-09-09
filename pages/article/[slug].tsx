@@ -63,12 +63,12 @@ const slug = ({ article, notFound = false }: IPropType) => {
                     </div>
                 </div>
                 <div className="sticky top-0">
-                    <h2 className="font-bold text-gray-600 text-lg">
-                        Signup to our newsletter
+                    <h2 className="font-bold text-gray-600 text-lg"> 
+                    Inscreva-se  na nossa newsletter
                     </h2>
                     <p className="mt-4 text-gray-500">
-                        Get the latest article on all things data delivered
-                        straight to your inbox
+                    Obtenha o artigo mais recente sobre todos os dados entregues
+                    direto para sua caixa de entrada
                     </p>
                     <input
                         className="border w-full p-2 pl-3 my-6 outline-primary"
