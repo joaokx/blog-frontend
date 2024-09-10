@@ -52,11 +52,14 @@ const slug = ({ article, notFound = false }: IPropType) => {
                         </span>
                     </div>
                     <div className="text-lg text-gray-600 leading-8">
-                        <img
+                        <Image
                             className="w-full my-12 mb-6"
                             src={`${article.attributes.Image.data.attributes.url}`}
                             alt={article.attributes.Title}
+                            height={400}
+                            width={400}
                         />
+
                         <MDXRemote
                             {...(article.attributes
                                 .body as MDXRemoteSerializeResult)}
