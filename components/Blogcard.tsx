@@ -17,11 +17,13 @@ const Blogcard = ({ article }: IPropType) => {
             </Link>
             <div className="flex items-center my-4">
                 <div className="rounded-lg overflow-hidden flex items-center justify-center mr-2">
-                    <Image
-                        src={`http://localhost:1337${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
-                        height={40}
-                        width={40}
-                    />
+<Image
+    src={article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}
+    height={40}
+    width={40}
+    alt={`Avatar of ${article.attributes.author.data.attributes.firstname} ${article.attributes.author.data.attributes.lastname}`}
+/>
+
                 </div>
                 <span className="text-sm font-bold text-gray-600">
                     {article.attributes.author.data.attributes.firstname}{' '}

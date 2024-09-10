@@ -4,8 +4,9 @@ const path = require('path'); // Importa o módulo path
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['localhost'],
-    },
+        domains: ['satisfying-moonlight-12eaee0b32.media.strapiapp.com'],
+        
+      },
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     },

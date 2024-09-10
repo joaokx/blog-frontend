@@ -33,7 +33,7 @@ const slug = ({ article, notFound = false }: IPropType) => {
                     <div className="flex items-center my-4">
                         <div className="rounded-lg overflow-hidden flex items-center justify-center mr-2">
                             <Image
-                                src={`http://localhost:1337${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
+                                src={`${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
                                 height={40}
                                 width={40}
                             />
@@ -53,7 +53,7 @@ const slug = ({ article, notFound = false }: IPropType) => {
                     <div className="text-lg text-gray-600 leading-8">
                         <img
                             className="w-full my-12 mb-6"
-                            src={`http://localhost:1337${article.attributes.Image.data.attributes.url}`}
+                            src={`${article.attributes.Image.data.attributes.url}`}
                             alt={article.attributes.Title}
                         />
                         <MDXRemote
@@ -73,10 +73,10 @@ const slug = ({ article, notFound = false }: IPropType) => {
                     <input
                         className="border w-full p-2 pl-3 my-6 outline-primary"
                         type="email"
-                        placeholder="Your work email"
+                        placeholder="Seu e-mail de trabalho"
                     />
                     <button className="border-2 border-primary rounded py-1 px-6 text-primary font-bold">
-                        Subscribe
+                    Inscrever-se
                     </button>
                     <hr className="my-6 border-gray-100" />
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
