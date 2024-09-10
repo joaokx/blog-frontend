@@ -36,6 +36,7 @@ const slug = ({ article, notFound = false }: IPropType) => {
                                 src={`${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
                                 height={40}
                                 width={40}
+                                alt=""
                             />
                         </div>
                         <span className="text-sm font-bold text-gray-600">
